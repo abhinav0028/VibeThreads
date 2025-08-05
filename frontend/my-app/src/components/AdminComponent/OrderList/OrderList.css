@@ -1,0 +1,43 @@
+/* /src/admin/ProductList.css */
+.product-list-container {
+  padding: 20px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-img {
+  width: 50px;
+  height: auto;
+}
+
+button {
+  padding: 6px 10px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+

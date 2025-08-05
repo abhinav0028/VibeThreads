@@ -1,0 +1,67 @@
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 280px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.product-price {
+  margin-top: 8px;
+}
+
+.current-price {
+  font-weight: 700;
+  color: #000;
+  margin-right: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}

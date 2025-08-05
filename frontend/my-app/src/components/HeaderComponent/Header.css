@@ -1,0 +1,224 @@
+/* === Global Font === */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* === Header Area === */
+.header-area {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* === Main Navigation === */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+/* === Logo === */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+/* === Navigation List === */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav li a,
+.nav li span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a2a2a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav li a:hover,
+.nav li span:hover {
+  color: #000000;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.nav .active {
+  font-weight: 600;
+  color: #000000;
+}
+
+/* === Logout Button === */
+.logout-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a2a2a;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.logout-button:hover {
+  color: #000;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* === Dropdown === */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  font-size: 18px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 6px 20px;
+}
+
+.dropdown-menu li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: black !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f5f5f5;
+  color: black !important;
+  font-weight: 600 !important;
+  color: #000;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* === Menu Trigger for Mobile (optional) === */
+.menu-trigger {
+  display: none;
+}
+
+/* === Responsive Navigation === */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-trigger {
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+}
+/* Specifically targeting links in the profile dropdown */
+
+/* Navigation List Items */
+.nav li {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  padding: 10px 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: black !important;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

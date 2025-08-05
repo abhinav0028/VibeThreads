@@ -1,0 +1,119 @@
+.my-orders {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .order-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .order-details summary {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .product-detail {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .product-detail img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+  
+  .shipping-info {
+    margin-top: 1rem;
+  }
+  .my-orders {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .tab-buttons {
+    margin-bottom: 1rem;
+  }
+  
+  .tab-buttons button {
+    margin-right: 1rem;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab-buttons button.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .order-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .order-details summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .product-detail {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  .product-detail img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+  
+  .shipping-info {
+    margin-top: 1rem;
+  }
+  .cancel-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000;
+  }
+  
+  .cancel-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .cancel-box select, .cancel-box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  

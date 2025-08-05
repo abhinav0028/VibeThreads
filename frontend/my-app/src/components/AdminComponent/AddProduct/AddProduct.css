@@ -1,0 +1,81 @@
+/* =============================
+   Add Product Page Container
+============================= */
+.add-product-container {
+  margin-left: 250px; /* Adjust if your sidebar width changes */
+  padding: 40px 30px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* =============================
+   Add Product Form
+============================= */
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs, Textarea, Select */
+.add-product-form input,
+.add-product-form textarea,
+.add-product-form select {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus,
+.add-product-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea specific */
+.add-product-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.add-product-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #0056b3;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+  .add-product-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .add-product-form {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,190 @@
+/*===============================
+  New Arrivals Section
+===============================*/
+.new-arrivals {
+  padding: 60px 20px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.new-arrivals h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*===============================
+  Product Grid
+===============================*/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+/*===============================
+  Product Card (Default)
+===============================*/
+.product-card,
+.product-card-2 {
+  background-color: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 280px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover,
+.product-card-2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/*===============================
+  Product Image Containers
+===============================*/
+.product-image-container,
+.product-image-container-2 {
+  position: relative;
+  margin-bottom: 16px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+}
+
+.product-image-container-2 {
+  height: 400px;
+  background-color: #d3d3d3;
+}
+
+/*===============================
+  Product Images
+===============================*/
+.product-image,
+.product-images {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image,
+.product-card-2:hover .product-images {
+  transform: scale(1.06);
+}
+
+/*===============================
+  Discount Badge
+===============================*/
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #e60023;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*===============================
+  Product Name
+===============================*/
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+  margin-bottom: 8px;
+}
+
+/*===============================
+  Product Price
+===============================*/
+.product-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.current-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  font-weight: 400;
+}
+
+/*===============================
+  Responsive Tweaks
+===============================*/
+@media (max-width: 768px) {
+  .new-arrivals h2 {
+    font-size: 26px;
+  }
+
+  .product-image-container {
+    height: 220px;
+  }
+
+  .product-image-container-2 {
+    height: 320px;
+  }
+
+  .product-card,
+  .product-card-2 {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-arrivals h2 {
+    font-size: 22px;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .current-price {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .original-price {
+    font-size: 13px;
+  }
+}
